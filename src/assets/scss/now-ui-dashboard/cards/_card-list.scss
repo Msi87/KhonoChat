@@ -21,7 +21,8 @@
     &:hover {
         margin-left: 4px;
         transition: 1s;
-        background: #f8f8f8;
+        background: #ff820e2a;
+        cursor: pointer;
 
     }
 
@@ -53,6 +54,12 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        @media only screen  and (max-width: 400px) {
+            p, h6 {
+                width: 100px;
+            }
         }
     }
 
