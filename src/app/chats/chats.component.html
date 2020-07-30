@@ -2,13 +2,14 @@
 </div>
 <div class="main-content">
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-md-8">
       <div class="card ">
         <div class="card-header">
           <h5>Chat List </h5>
         </div>
         <div class="card-body">
-          <ngb-tabset>
+          
+          <ngb-tabset [justify]="currentJustify">
             <ngb-tab title="Chats">
               <ng-template ngbTabContent>
                 <div class="item">
@@ -126,19 +127,78 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-4">
       <div class="card ">
         <div class="card-header">
-          <h5>Messages</h5>
+          <div class="online">
+            <div class="avatar">
+              <span class="on"></span>
+              <img src="../../assets/img/mike.jpg" alt="">
+            </div>
+            <div class="paragragh">
+              <h6>Mike Michelle Jackson Manchester</h6>
+              <p>076 657 7584</p>
+            </div>
+          </div>
         </div>
         <div class="card-body">
-          <div class="messages"></div>
+          <div class="messages-chatbox" #chatbox>
+            <div class="chatbox">
+              <div class="chat">
+                <div class="sender">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab deserunt corporis animi mollitia porro odit, quo cum facilis vitae eligendi. Voluptatum iste asperiores nobis hic tempora minus sed optio!</p>
+                   <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+              
+              <div class="chat">
+                <div class="receiver">
+                  <p>Hey</p>
+                  <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+
+              <div class="chat">
+                <div class="sender">
+                  <p>How are you</p>
+                  <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+              <div class="chat">
+                <div class="receiver">
+                  <p>I am fine thanks. How about you?</p>
+                  <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+              <div class="chat">
+                <div class="sender">
+                  <p>How are you</p>
+                  <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+              <div class="chat">
+                <div class="receiver">
+                  <p>How are you</p>
+                  <p id="time"><small>12:00</small> </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="text-area-container">
+                  
+                    <input type="text" class="form-control" placeholder="Type your Message" value="">
+                 
+                   <button class="fab-button">
+                    <i class="now-ui-icons ui-1_send" style="color: #fff;"></i>
+                   </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+<!-- 
 <div class="box"> 
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
 
@@ -177,4 +237,4 @@
         </div>
         </div>
 
-</div> 
+</div>  -->
