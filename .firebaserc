@@ -1,0 +1,44 @@
+{
+  "projects": {
+    "default": "khonochat"
+  },
+  "targets": {
+    "khonochat": {
+      "hosting": {
+        "main": [
+          "khonochat"
+        ],
+        "msindisi": [
+          "khonochat-msindisi"
+        ],
+        "elia": [
+          "khonochat-elia"
+        ],
+        "zikhona": [
+          "khonochat-zikhona"
+        ],
+        "tumi": [
+          "khonochat-tumi"
+        ],
+        "jess": [
+          "khonochat-jess"
+        ],
+        "africa": [
+          "khonochat-africa"
+        ],
+        "siphokazi": [
+          "khonochat-siphokazi"
+        ],
+        "gladness": [
+          "khonochat-gladness"
+        ],
+        "mqoliso": [
+          "khonochat-mqoliso"
+        ],
+        "fernando": [
+          "khonochat-fernando"
+        ]
+      }
+    }
+  }
+}

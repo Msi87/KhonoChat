@@ -1,0 +1,13 @@
+.box{
+    background-color: lightcoral;
+}
+.ul li a {
+  float: left;
+}
+
+.write-message {
+    height: 50%;
+    padding-bottom: 80px;
+    }
+    
+  

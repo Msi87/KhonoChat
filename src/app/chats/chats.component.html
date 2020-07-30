@@ -1,0 +1,41 @@
+<p>chats works!</p>
+
+<div class="box"> 
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
+
+    <links class="topnav">
+  
+        <form class="form-inline waves-light" mdbWavesEffect>
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            </div>
+          </form>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-light" mdbWavesEffect>Chat<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Recent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Contacts</a>
+        </li>
+  
+      </ul>
+     
+    </links>
+  </mdb-navbar>
+</div>
+<div class="body">
+    
+    
+        <div class="write-message">
+          <textarea placeholder="Message" name="" [(ngModel)]="msg" id="" cols="60"></textarea>
+        <div class="btn">
+          <ion-button shape="round" (click)="sendReply()" expand="outline" color="medium" >send response</ion-button>
+        </div>
+        </div>
+
+</div>
